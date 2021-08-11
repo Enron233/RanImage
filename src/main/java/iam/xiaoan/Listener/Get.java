@@ -16,7 +16,7 @@ public class Get {
     public static void onNeed() {
         GlobalEventChannel.INSTANCE.subscribeAlways(GroupMessageEvent.class, event -> {
             MessageChain chain = event.getMessage();
-            if (chain.contentToString().startsWith("来点涩图")) {
+            if (chain.contentToString().startsWith("来点壁纸")) {
                 try {
                     event.getGroup().sendMessage(MessageUtils.newChain(new At(event.getSender().getId()), Image.getSeImage(event.getGroup())));
                 } catch (IOException e) {

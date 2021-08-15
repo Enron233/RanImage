@@ -5,6 +5,7 @@ import net.mamoe.mirai.console.plugin.jvm.JavaPlugin;
 import net.mamoe.mirai.console.plugin.jvm.JvmPluginDescriptionBuilder;
 
 public final class RanImage extends JavaPlugin {
+    public static boolean r18 = false;
     public static final RanImage INSTANCE = new RanImage();
 
     private RanImage() {
